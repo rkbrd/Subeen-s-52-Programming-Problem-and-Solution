@@ -9,8 +9,8 @@ int main()
         int n;
         scanf("%d",&n);
         if(n%2==0)
-            printf("even");
+            printf("even\n");
         else
-            printf("odd");
+            printf("odd\n");
     }
 }
