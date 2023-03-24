@@ -10,7 +10,7 @@ int main()
         long long n;
         cin>>n;
         long long sum=(n*(n+1))/2;
-        for(int i=0; i<n; i++)
+        for(int i=1; i<n; i++)
         {
             int a;
             scanf("%d",&a);
