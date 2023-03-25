@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main()
+int main()   /// Don't use endl, it is slower
 {
     int tc;
     cin>>tc;
@@ -10,12 +10,12 @@ int main()
         int x,n;
         cin>>x>>n;
         if(x>n)
-            cout<<"Invalid!"<<endl;
+            cout<<"Invalid!"<<'\n';
         else
         {
             for(int i=1; i*x<=n; i++)
-                cout<<x*i<<endl;
+                cout<<x*i<<'\n';
         }
-        cout<<endl;
+        cout<<'\n';
     }
 }
