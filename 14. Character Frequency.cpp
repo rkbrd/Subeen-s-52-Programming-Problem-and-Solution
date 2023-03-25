@@ -8,18 +8,20 @@ int main()
     cin.ignore();
     for(int cs=1; cs<=tc; cs++)
     {
-        string s,c;
+        string s;
         getline(cin,s);
-        getline(cin,c);
+        char c;
+        cin>>c;
+        cin.ignore();
         int occ=0;
         for(int i=0; i<s.size(); i++)
         {
-            if(s[i]==c[0])
+            if(s[i]==c)
                 occ++;
         }
         if(occ>0)
-            cout<<"Occurrence of '"<<c[0]<<"' in '"<<s<<"' = "<<occ<<endl;
+            cout<<"Occurrence of '"<<c<<"' in '"<<s<<"' = "<<occ<<endl;
         else
-            cout<<"'"<<c[0]<<"' is not present\n";
+            cout<<"'"<<c<<"' is not present\n";
     }
 }
